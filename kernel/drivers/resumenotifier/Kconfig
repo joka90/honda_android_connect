@@ -1,0 +1,9 @@
+#
+# resume notifier configuration
+#
+config ADA_RESUME_NOTIFIER
+	tristate "Support resume notification"
+    depends on ADA_BUDET_DETECT
+	default y
+	---help---
+	Adds resume notification support.

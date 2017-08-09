@@ -1,0 +1,2 @@
+config DISPLAY_COLOR_DRV
+    tristate "Display color driver"

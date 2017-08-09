@@ -1,0 +1,63 @@
+#
+# nonvolatile configuration
+#
+config NONVOLATILE
+	tristate "Nonvolatile data read/write support"
+	default n
+	---help---
+	Adds Noncolatile data read/write driver
+
+config NONVOLATILE_MODE_NORMAL
+	tristate "Nonvolatile data access mode normal"
+	default y
+	---help---
+	Nonvolatile driver access mode is synchronous mode of eMMC and SDRAM.
+
+config NONVOLATILE_MODE_SDRAM
+	tristate "Nonvolatile data access mode SDRAM only"
+	default n
+	---help---
+	Nonvolatile driver access mode is not synchronous mode of eMMC and SDRAM.
+
+config NONVOLATILE_MODE_MEMORY
+	tristate "Nonvolatile data access mode MEMORY"
+	default n
+	---help---
+	Nonvolatile driver access mode is not synchronous mode kernel memory
+
+config NONVOLATILE_DEBUG
+	tristate "Nonvolatile driver DEBUG mode"
+	default n
+	---help---
+	Nonvolatile driver DEBUG mode. Add service is Noncolatile DUMP function.
+
+config NONVOLATILE_DATA_INIT
+	tristate "Nonvolatile data intialize mode"
+	default n
+	---help---
+	Nonvolatile data initialize. Data is nonvolatile_init_data in nonvolatile_data.h
+
+config NONVOL_LOG_NOTICE
+	tristate "Nonvolatile driver log mode NOTICE"
+	default n
+	---help---
+	Nonvolatile driver log level is NOTICE.
+
+config NONVOL_LOG_INFO
+	tristate "Nonvolatile driver log mode INFO"
+	default n
+	---help---
+	Nonvolatile driver log level is INFO.
+
+config NONVOL_LOG_DEBUG
+	tristate "Nonvolatile driver log mode DEBUG"
+	default n
+	---help---
+	Nonvolatile driver log level is DEBUG.
+
+config NONVOL_DEBUG_FUNCTION_INOUT
+	tristate "Nonvolatile driver log mode DEBUG"
+	default n
+	---help---
+	Nonvolatile driver log level is DEBUG function inout.
+

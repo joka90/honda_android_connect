@@ -1,0 +1,13 @@
+menu "lites"
+config LITES
+	tristate "lites driver"
+	help
+	  Say y here if you use LITES.
+
+config LITES_OUTLOG_LEVEL
+	int "default print log level"
+	default -1
+	help
+	  Set default print log level.
+
+endmenu

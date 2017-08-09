@@ -1,0 +1,29 @@
+#
+# devone configuration
+#
+
+config ADA_BUDET_DETECT
+	bool "ADA BU-DET intterupt detection"
+	default n
+	depends on SUSPEND
+	---help---
+	  Enable ADA BU-DET interrupt handling
+
+choice
+	prompt "ADA BU-DET Resume mode"
+	depends on ADA_BUDET_DETECT
+	default ADA_BUDET_RESUME_MODE_AFTER_REINIT
+
+	config ADA_BUDET_RESUME_MODE_BEFORE_TRISTATE
+		bool "Before tristate"
+
+	config ADA_BUDET_RESUME_MODE_AFTER_TRISTATE
+		bool "After tristate"
+
+	config ADA_BUDET_RESUME_MODE_AFTER_PREPARE_TO_REINIT
+		bool "After prepare_to_reinit"
+
+	config ADA_BUDET_RESUME_MODE_AFTER_REINIT
+		bool "After reinit"
+endchoice
+

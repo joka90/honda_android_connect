@@ -1,0 +1,194 @@
+#ifndef __FJSEC_MODINFO_H
+#define __FJSEC_MODINFO_H
+
+#include <generated/fjsec_modinfo_gen.h>
+
+#ifndef CHECKSUM_SCSI_WAIT_SCAN
+#define CHECKSUM_SCSI_WAIT_SCAN {0}
+#endif
+
+#ifndef CHECKSUM_MXL5005S
+#define CHECKSUM_MXL5005S {0}
+#endif
+
+#ifndef CHECKSUM_MT20XX
+#define CHECKSUM_MT20XX {0}
+#endif
+
+#ifndef CHECKSUM_BLUETOOTH
+#define CHECKSUM_BLUETOOTH {0}
+#endif
+
+#ifndef CHECKSUM_MXL5007T
+#define CHECKSUM_MXL5007T {0}
+#endif
+
+#ifndef CHECKSUM_QT1010
+#define CHECKSUM_QT1010 {0}
+#endif
+
+#ifndef CHECKSUM_CFG80211
+#define CHECKSUM_CFG80211 {0}
+#endif
+
+#ifndef CHECKSUM_TUNER_TYPES
+#define CHECKSUM_TUNER_TYPES {0}
+#endif
+
+#ifndef CHECKSUM_TDA9887
+#define CHECKSUM_TDA9887 {0}
+#endif
+
+#ifndef CHECKSUM_XC4000
+#define CHECKSUM_XC4000 {0}
+#endif
+
+#ifndef CHECKSUM_LIB80211
+#define CHECKSUM_LIB80211 {0}
+#endif
+
+#ifndef CHECKSUM_MC44S803
+#define CHECKSUM_MC44S803 {0}
+#endif
+
+#ifndef CHECKSUM_TEA5767
+#define CHECKSUM_TEA5767 {0}
+#endif
+
+#ifndef CHECKSUM_WL12XX
+#define CHECKSUM_WL12XX {0}
+#endif
+
+#ifndef CHECKSUM_MAC80211
+#define CHECKSUM_MAC80211 {0}
+#endif
+
+#ifndef CHECKSUM_WL12XX_SDIO_TEST
+#define CHECKSUM_WL12XX_SDIO_TEST {0}
+#endif
+
+#ifndef CHECKSUM_BTWILINK
+#define CHECKSUM_BTWILINK {0}
+#endif
+
+#ifndef CHECKSUM_LIB80211_CRYPT_CCMP
+#define CHECKSUM_LIB80211_CRYPT_CCMP {0}
+#endif
+
+#ifndef CHECKSUM_CDC_NCM
+#define CHECKSUM_CDC_NCM {0}
+#endif
+
+#ifndef CHECKSUM_IPW2100
+#define CHECKSUM_IPW2100 {0}
+#endif
+
+#ifndef CHECKSUM_WL12XX_SDIO
+#define CHECKSUM_WL12XX_SDIO {0}
+#endif
+
+#ifndef CHECKSUM_BNEP
+#define CHECKSUM_BNEP {0}
+#endif
+
+#ifndef CHECKSUM_WL12XX_SPI
+#define CHECKSUM_WL12XX_SPI {0}
+#endif
+
+#ifndef CHECKSUM_HIDP
+#define CHECKSUM_HIDP {0}
+#endif
+
+#ifndef CHECKSUM_TUNER_XC2028
+#define CHECKSUM_TUNER_XC2028 {0}
+#endif
+
+#ifndef CHECKSUM_GPS_DRV
+#define CHECKSUM_GPS_DRV {0}
+#endif
+
+#ifndef CHECKSUM_BASEBAND_USB_CHR
+#define CHECKSUM_BASEBAND_USB_CHR {0}
+#endif
+
+#ifndef CHECKSUM_MCCILDKCDCNCM
+#define CHECKSUM_MCCILDKCDCNCM {0}
+#endif
+
+#ifndef CHECKSUM_XC5000
+#define CHECKSUM_XC5000 {0}
+#endif
+
+#ifndef CHECKSUM_TDA18218
+#define CHECKSUM_TDA18218 {0}
+#endif
+
+#ifndef CHECKSUM_TDA18271
+#define CHECKSUM_TDA18271 {0}
+#endif
+
+#ifndef CHECKSUM_MT2266
+#define CHECKSUM_MT2266 {0}
+#endif
+
+#ifndef CHECKSUM_TDA18212
+#define CHECKSUM_TDA18212 {0}
+#endif
+
+#ifndef CHECKSUM_MT2131
+#define CHECKSUM_MT2131 {0}
+#endif
+
+#ifndef CHECKSUM_TUNER_SIMPLE
+#define CHECKSUM_TUNER_SIMPLE {0}
+#endif
+
+#ifndef CHECKSUM_LIBIPW
+#define CHECKSUM_LIBIPW {0}
+#endif
+
+#ifndef CHECKSUM_TDA8290
+#define CHECKSUM_TDA8290 {0}
+#endif
+
+#ifndef CHECKSUM_MICHAEL_MIC
+#define CHECKSUM_MICHAEL_MIC {0}
+#endif
+
+#ifndef CHECKSUM_TDA827X
+#define CHECKSUM_TDA827X {0}
+#endif
+
+#ifndef CHECKSUM_LIB80211_CRYPT_TKIP
+#define CHECKSUM_LIB80211_CRYPT_TKIP {0}
+#endif
+
+#ifndef CHECKSUM_LIB80211_CRYPT_WEP
+#define CHECKSUM_LIB80211_CRYPT_WEP {0}
+#endif
+
+#ifndef CHECKSUM_RFCOMM
+#define CHECKSUM_RFCOMM {0}
+#endif
+
+#ifndef CHECKSUM_GSPCA_MAIN
+#define CHECKSUM_GSPCA_MAIN {0}
+#endif
+
+#ifndef CHECKSUM_MT2060
+#define CHECKSUM_MT2060 {0}
+#endif
+
+#ifndef CHECKSUM_MAX2165
+#define CHECKSUM_MAX2165 {0}
+#endif
+
+#ifndef CHECKSUM_TEA5761
+#define CHECKSUM_TEA5761 {0}
+#endif
+
+#ifndef CHECKSUM_COMPAT
+#define CHECKSUM_COMPAT {0}
+#endif
+
+#endif /*__FJSEC_MODINFO_H*/

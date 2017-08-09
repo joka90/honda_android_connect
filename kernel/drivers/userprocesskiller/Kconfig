@@ -1,0 +1,8 @@
+#
+# user process killer configuration
+#
+config ADA_USER_PROCESS_KILLER
+	tristate "ADA User Process Killer"
+	default n
+	---help---
+	  Enable support user processes to be killed on resume

@@ -1,0 +1,61 @@
+#
+# TI's shared transport line discipline and the protocol
+# drivers (BT, FM and GPS)
+#
+menu "Texas Instruments shared transport line discipline"
+config TI_ST
+	tristate "Shared transport core driver"
+	depends on NET && GPIOLIB
+	select FW_LOADER
+	help
+	  This enables the shared transport core driver for TI
+	  BT / FM and GPS combo chips. This enables protocol drivers
+	  to register themselves with core and send data, the responses
+	  are returned to relevant protocol drivers based on their
+	  packet types.
+
+config ST_GPS
+	tristate "gps driver for ST"
+	select TI_ST
+	help
+	  This enables the GPS driver for TI WL128x BT/FM/GPS combo devices.
+	  It will provide a character device for the TI GPS host software to
+	  access the GPS core on the WL128x.
+
+# FUJITSU TEN:2012-08-09 BT/GPS debug config add. end
+config TI_ST_BT_EN_INVERT
+	bool "INVERT BT_EN enable state for BB/1S"
+	default n
+	help
+	  Say Y here if you have INVERT BT_EN enable state
+	  for BB/1S.
+
+	  If unsure, say N.
+# FUJITSU TEN:2012-08-09 BT/GPS debug config add. end
+
+# FUJITSU-TEN:2012-09-07 Support_BuDet start
+config TI_FASTBOOT
+	bool "Enable BuDet logics for TI WiLink"
+	default y
+	help
+	  This enables Bu-Det/ACC Interrupt spesific logics for TI WiLink.
+
+config TI_ST_DEBUG_LOG
+	bool "Enable ti-st DEBUG log"
+	default n
+	
+config TI_ST_TRACE_LOG
+	bool "Enable ti-st TRACE log"
+	default n
+
+# FUJITSU-TEN:2012-09-07 Support_BuDet end
+
+# FUJITSU-TEN:2013-06-12 config U-APSD start
+config TI_UAPSD
+	bool "Enable UAPSD"
+	default n
+	help
+	  This enables UAPSD function.
+# FUJITSU-TEN:2013-06-12 config U-APSD end
+
+endmenu
